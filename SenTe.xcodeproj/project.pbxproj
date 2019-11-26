@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		724AD3B0238CB90A00922168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AD3AF238CB90A00922168 /* AppDelegate.swift */; };
 		724AD3B2238CB90A00922168 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AD3B1238CB90A00922168 /* SceneDelegate.swift */; };
-		724AD3B4238CB90A00922168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AD3B3238CB90A00922168 /* ViewController.swift */; };
+		724AD3B4238CB90A00922168 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AD3B3238CB90A00922168 /* MainViewController.swift */; };
 		724AD3B7238CB90A00922168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724AD3B5238CB90A00922168 /* Main.storyboard */; };
 		724AD3B9238CB90E00922168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724AD3B8238CB90E00922168 /* Assets.xcassets */; };
 		724AD3BC238CB90E00922168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724AD3BA238CB90E00922168 /* LaunchScreen.storyboard */; };
+		724AD3CA238CBD2700922168 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AD3C9238CBD2700922168 /* CarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		724AD3AC238CB90A00922168 /* SenTe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SenTe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AD3AF238CB90A00922168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724AD3B1238CB90A00922168 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		724AD3B3238CB90A00922168 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		724AD3B3238CB90A00922168 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		724AD3B6238CB90A00922168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		724AD3B8238CB90E00922168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724AD3BB238CB90E00922168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		724AD3BD238CB90E00922168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		724AD3C9238CBD2700922168 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				724AD3AF238CB90A00922168 /* AppDelegate.swift */,
 				724AD3B1238CB90A00922168 /* SceneDelegate.swift */,
-				724AD3B3238CB90A00922168 /* ViewController.swift */,
+				724AD3B3238CB90A00922168 /* MainViewController.swift */,
+				724AD3C9238CBD2700922168 /* CarouselView.swift */,
 				724AD3B5238CB90A00922168 /* Main.storyboard */,
 				724AD3B8238CB90E00922168 /* Assets.xcassets */,
 				724AD3BA238CB90E00922168 /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				724AD3B4238CB90A00922168 /* ViewController.swift in Sources */,
+				724AD3B4238CB90A00922168 /* MainViewController.swift in Sources */,
 				724AD3B0238CB90A00922168 /* AppDelegate.swift in Sources */,
+				724AD3CA238CBD2700922168 /* CarouselView.swift in Sources */,
 				724AD3B2238CB90A00922168 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HZ5666T235;
 				INFOPLIST_FILE = SenTe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HZ5666T235;
 				INFOPLIST_FILE = SenTe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
