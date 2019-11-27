@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A5C8EB238E4EC700F3D9A1 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5C8EA238E4EC700F3D9A1 /* CarouselCell.swift */; };
+		6536FC9F29FF9EF3ABFB2566 /* Pods_SenTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88763D79CC0C2361390B1587 /* Pods_SenTe.framework */; };
 		724AD3B0238CB90A00922168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AD3AF238CB90A00922168 /* AppDelegate.swift */; };
 		724AD3B2238CB90A00922168 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AD3B1238CB90A00922168 /* SceneDelegate.swift */; };
 		724AD3B4238CB90A00922168 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AD3B3238CB90A00922168 /* MainViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46D0C677775C21CC74AF92A0 /* Pods-SenTe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SenTe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SenTe/Pods-SenTe.debug.xcconfig"; sourceTree = "<group>"; };
+		52A5C8EA238E4EC700F3D9A1 /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
 		724AD3AC238CB90A00922168 /* SenTe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SenTe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AD3AF238CB90A00922168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724AD3B1238CB90A00922168 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		724AD3BB238CB90E00922168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		724AD3BD238CB90E00922168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		724AD3C9238CBD2700922168 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		88763D79CC0C2361390B1587 /* Pods_SenTe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SenTe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B58F62651B1FC9B5531BAF /* Pods-SenTe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SenTe.release.xcconfig"; path = "Pods/Target Support Files/Pods-SenTe/Pods-SenTe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6536FC9F29FF9EF3ABFB2566 /* Pods_SenTe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		433EE8FDBA917FCB1E1F99FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46D0C677775C21CC74AF92A0 /* Pods-SenTe.debug.xcconfig */,
+				A4B58F62651B1FC9B5531BAF /* Pods-SenTe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		724AD3A3238CB90900922168 = {
 			isa = PBXGroup;
 			children = (
 				724AD3AE238CB90A00922168 /* SenTe */,
 				724AD3AD238CB90A00922168 /* Products */,
+				433EE8FDBA917FCB1E1F99FC /* Pods */,
+				7327D91B2694549A7718BCED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +84,17 @@
 				724AD3B8238CB90E00922168 /* Assets.xcassets */,
 				724AD3BA238CB90E00922168 /* LaunchScreen.storyboard */,
 				724AD3BD238CB90E00922168 /* Info.plist */,
+				52A5C8EA238E4EC700F3D9A1 /* CarouselCell.swift */,
 			);
 			path = SenTe;
+			sourceTree = "<group>";
+		};
+		7327D91B2694549A7718BCED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88763D79CC0C2361390B1587 /* Pods_SenTe.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 724AD3C0238CB90E00922168 /* Build configuration list for PBXNativeTarget "SenTe" */;
 			buildPhases = (
+				2C344AC9687D491A18D60A32 /* [CP] Check Pods Manifest.lock */,
 				724AD3A8238CB90900922168 /* Sources */,
 				724AD3A9238CB90900922168 /* Frameworks */,
 				724AD3AA238CB90900922168 /* Resources */,
+				F3F28C940149A21BBA12818F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +165,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C344AC9687D491A18D60A32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SenTe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3F28C940149A21BBA12818F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SenTe/Pods-SenTe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SenTe/Pods-SenTe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		724AD3A8238CB90900922168 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -145,6 +223,7 @@
 				724AD3B0238CB90A00922168 /* AppDelegate.swift in Sources */,
 				724AD3CA238CBD2700922168 /* CarouselView.swift in Sources */,
 				724AD3B2238CB90A00922168 /* SceneDelegate.swift in Sources */,
+				52A5C8EB238E4EC700F3D9A1 /* CarouselCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +365,7 @@
 		};
 		724AD3C1238CB90E00922168 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46D0C677775C21CC74AF92A0 /* Pods-SenTe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +385,7 @@
 		};
 		724AD3C2238CB90E00922168 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B58F62651B1FC9B5531BAF /* Pods-SenTe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
